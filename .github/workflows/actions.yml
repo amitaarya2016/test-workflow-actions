@@ -5,7 +5,7 @@ on:
     types: [test-build]
   # schedule:
   #   - cron: "0/5 * * * *"
-  # push:
+  # push: 
   pull_request:
     types: [closed, assigned, opened, reopened]
 jobs:
