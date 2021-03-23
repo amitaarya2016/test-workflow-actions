@@ -18,3 +18,11 @@ jobs:
           print
           (platform.processor())
         shell: python
+  run-windows-commands:
+    runs-on: windows-latest
+    steps: 
+      - name: dir powershell
+        run: Get-location
+      - name: dir bash
+        run: pwd
+        shell: bash
