@@ -3,6 +3,14 @@ name: test_contexts
 on: push
 
 jobs:
+  functions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo evaluated functions
+        run: | 
+          echo ${{ contains( 'hello', 'll' )}}
+          echo ${{ startsWith( 'hello', 'h' )}}
+          echo ${{ format( 'hello {0} {1}', 'world' , '!!' )}}
   one:
     runs-on: ubuntu-latest
     steps:
