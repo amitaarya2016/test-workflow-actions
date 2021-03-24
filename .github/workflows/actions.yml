@@ -12,6 +12,8 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
+      - name: payload from dispatch
+        run: echo "${{ github.event.client_payload.env }}"
       - name: run pwd and ls 
         run: |
           pwd
