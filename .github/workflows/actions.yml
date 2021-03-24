@@ -1,8 +1,8 @@
 name: Action workflow
 
 on:
-  repository_dispatch:
-    types: [build]
+  # repository_dispatch:
+  #   types: [build]
   # schedule:
   #   - cron: "0/5 * * * *"
   # push: 
